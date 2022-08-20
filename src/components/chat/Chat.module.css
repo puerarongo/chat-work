@@ -1,0 +1,134 @@
+.chat__header {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(239 239 239);
+    border-bottom: 1px solid rgb(72 72 72 / 30%);
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 10%);
+
+    position: fixed;
+    top: 0;
+    width: 57%;
+}
+
+.user__avatar,
+.contact__avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user__name {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+/* ! Chat */
+
+.chat__container {
+    padding: 20px;
+    overflow: auto;
+    max-height: 400px;
+    position: fixed;
+    width: 57%;
+}
+
+.chat__list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.chat__item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.user__container {
+    margin-left: auto;
+    text-align: right;
+}
+
+.contact__avatar {
+    margin-right: 10px;
+}
+
+.contact__item,
+.user__item {
+    display: inline-block;
+    text-align: left;
+    min-width: 30px;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid rgb(72 72 72 / 30%);
+    /* ??? */
+    margin-bottom: 10px;
+}
+
+.contact__item {
+    background-color: rgb(25, 25, 51);
+    color: white;
+}
+
+.user__item {
+    background-color: rgb(179, 176, 176);
+    color: black;
+}
+
+.contact__date {
+    color: rgb(116, 116, 116);
+}
+
+
+
+/* ! Submission */
+
+.submisson__container {
+    background-color: rgb(239 239 239);
+    border-top: 1px solid rgb(72 72 72 / 30%);
+    padding: 30px 20px;
+
+    position: fixed;
+    bottom: 0;
+    width: 57%;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.submisson__input {
+    min-width: 80%;
+    height: 50px;
+    padding-left: 20px;
+    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid rgb(72 72 72 / 30%);
+    border-right: none;
+    outline: none;
+}
+
+.submission__button {
+    box-sizing: content-box;
+    width: 8%;
+    height: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid rgb(72 72 72 / 30%);
+    border-left: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.arrow__svg {
+    height: 25px;
+    width: 25px;
+}

@@ -1,0 +1,52 @@
+.filter__container {
+    padding: 20px 20px;
+    border-bottom: 1px solid rgb(72 72 72 / 30%);
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 10%);
+    background-color: rgb(239 239 239);
+}
+
+.filter__avatar {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+.filter__form {
+    text-align: center;
+}
+
+.input__container {
+    display: flex;
+    justify-content: center;
+}
+
+.svg__container {
+    display: flex;
+    align-items: center;
+    padding: 1px 5px ;
+    height: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid rgb(72 72 72 / 30%);
+    border-right: none;
+    background-color: white;
+
+}
+
+.filter__input {
+    min-width: 80%;
+    height: 40px;
+    padding-left: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid rgb(72 72 72 / 30%);
+    border-left: none;
+    outline: none;
+}
+
+.loupe__svg {
+    width: 20px;
+    height: 20px;
+}

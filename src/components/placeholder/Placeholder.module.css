@@ -1,0 +1,9 @@
+.placeholder__container {
+    text-align: center;
+}
+
+.placeholder__text {
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(40, 172, 224);
+}
