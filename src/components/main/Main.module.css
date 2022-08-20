@@ -56,5 +56,10 @@
     }
 }
 
+@media screen and (min-height: 750px) {
+    .chat {
+        padding-top: 20%;
+    }
+}
 
 

@@ -161,6 +161,12 @@
     }
 }
 
+@media screen and (min-height: 750px) {
+    .chat__container {
+        max-height: 80%;
+    }
+}
+
 @media screen and (min-width: 769px) {
     .chat__container {
         padding: 20px;
@@ -176,11 +182,7 @@
     }
 }
 
-@media screen and (min-height: 769px) {
-    .chat__container {
-        max-height: 90%;
-    }
-}
+
 
 @media screen and (min-width: 1200px) {
     .chat__container {
