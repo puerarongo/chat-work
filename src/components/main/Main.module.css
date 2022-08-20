@@ -21,11 +21,17 @@
 
     .chat {
         width: 70%;
-        padding-top: 80px;
     }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (max-height: 480px) {
+    .chat {
+        padding-top: 12%;
+        padding-bottom: 10%;
+    }
+}
+
+@media screen and (min-widt: 481px) {
     .sidebar {
         width: 35%;
     }
@@ -36,10 +42,19 @@
     }
 }
 
-@media screen and (min-width: 769px) {
-
+@media screen and (min-height: 481px) {
     .chat {
-        padding-top: 100px;
-        padding-bottom: 110px;
+        padding-top: 10%;
+        padding-bottom: 12%;
     }
 }
+
+@media screen and (min-height: 600px) {
+    .chat {
+        padding-top: 7%;
+        padding-bottom: 10%;
+    }
+}
+
+
+

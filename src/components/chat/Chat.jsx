@@ -8,6 +8,7 @@ import { setObj, getObj } from '../../service/localStorageFuncs';
 import arraysFunc from '../../service/arraysFunc';
 
 import ChatHeader from 'components/chatHeader/ChatHeader';
+import PropTypes from 'prop-types';
 import styles from './Chat.module.css';
 
 const delay = 8000;
@@ -178,6 +179,11 @@ const Chat = ({ messageFunc }) => {
         }
         </>
     )
+};
+
+
+Chat.propTypes = {
+    messageFunc: PropTypes.func.isRequired
 };
 
 export default Chat;

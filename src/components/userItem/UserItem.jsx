@@ -1,4 +1,5 @@
-import React  from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './UserItem.module.css';
 
 const UserItem = ({ id, name, img, text, time }) => {
@@ -24,6 +25,21 @@ const UserItem = ({ id, name, img, text, time }) => {
             </div>
         </>
     )
+};
+
+
+UserItem.propTypes = {
+    id: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+    ]).isRequired,
+    name: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    time: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+    ]).isRequired
 };
 
 export default UserItem;

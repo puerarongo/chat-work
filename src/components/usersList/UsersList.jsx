@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Filter from '../filter/Filter';
 import UserItem from "../userItem/UserItem";
 import apiImmitation from "../../service/apiImmitation";
+import PropTypes from 'prop-types';
 import styles from './UsersList.module.css';
 
 
@@ -49,6 +50,16 @@ const UsersList = ({ id, time, text }) => {
             </div>
         </>
     )
+};
+
+
+UsersList.propTypes = {
+    id: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    time: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+    ]).isRequired
 };
 
 export default UsersList;

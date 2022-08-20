@@ -1,7 +1,9 @@
 import React from 'react';
 import picturePath from '../../service/picturePath';
 import iconsPath from '../../service/iconsPath';
+import PropTypes from 'prop-types';
 import styles from './Filter.module.css';
+
 
 const Filter = ({filter, filterFunc}) => {
     return (
@@ -28,6 +30,12 @@ const Filter = ({filter, filterFunc}) => {
             </div>
         </>
     )
+};
+
+
+Filter.propTypes = {
+    filter: PropTypes.string.isRequired,
+    filterFunc: PropTypes.func.isRequired
 };
 
 export default Filter;
