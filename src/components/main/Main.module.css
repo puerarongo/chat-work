@@ -4,13 +4,42 @@
 }
 
 .sidebar {
-    width: 40%; 
+    width: 30%;
 }
 
 .chat {
     border-left: 1px solid rgba(0, 0, 0, 0.199);
-    padding-top: 100px;
-    padding-bottom: 110px;
-    width: 60%;
+}
 
+
+/* todo Media  queries */
+
+@media screen and (max-width: 480px) {
+    .sidebar {
+        width: 30%;
+    }
+
+    .chat {
+        width: 70%;
+        padding-top: 80px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .sidebar {
+        width: 35%;
+    }
+
+    .chat {
+        width: 65%;
+        padding-top: 80px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .chat {
+        padding-top: 100px;
+        padding-bottom: 110px;
+    }
 }

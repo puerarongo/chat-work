@@ -6,6 +6,8 @@ import usersCollection from '../../service/apiImmitation';
 import getMessage from '../../service/getMessage';
 import { setObj, getObj } from '../../service/localStorageFuncs';
 import arraysFunc from '../../service/arraysFunc';
+
+import ChatHeader from 'components/chatHeader/ChatHeader';
 import styles from './Chat.module.css';
 
 const delay = 8000;
@@ -127,10 +129,7 @@ const Chat = ({ messageFunc }) => {
         <>   
         {profile && (
             <>
-            <div className={styles.chat__header}>
-                <img className={styles.user__avatar} src={profile.image} alt="" />
-                <p className={styles.user__name}>{profile.name}</p>
-            </div>
+            <ChatHeader profile={profile} />
             <div className={styles.chat__container}>
                 <ul className={styles.chat__list}>
                     {filtredUser.map(({ message, sender, time }) => {

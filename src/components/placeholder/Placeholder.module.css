@@ -3,7 +3,26 @@
 }
 
 .placeholder__text {
-    font-size: 48px;
+    padding: 20px;
     font-weight: 700;
     color: rgb(40, 172, 224);
+}
+
+
+@media screen and (max-width: 480px) {
+    .placeholder__text {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .placeholder__text {
+        font-size: 34px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .placeholder__text {
+        font-size: 48px;
+    }
 }
