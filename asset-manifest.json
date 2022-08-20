@@ -1,13 +1,21 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.7acaea2f.css",
-    "main.js": "/react-homework-template/static/js/main.07d3183d.js",
-    "index.html": "/react-homework-template/index.html",
-    "main.7acaea2f.css.map": "/react-homework-template/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/react-homework-template/static/js/main.07d3183d.js.map"
+    "main.css": "/chat-work/static/css/main.071c5d5d.css",
+    "main.js": "/chat-work/static/js/main.622b4f51.js",
+    "static/js/787.39c65f20.chunk.js": "/chat-work/static/js/787.39c65f20.chunk.js",
+    "static/media/9.jpg": "/chat-work/static/media/9.bdcf6e343d6649e6a1be.jpg",
+    "static/media/2.jpg": "/chat-work/static/media/2.34c884f9777492a62006.jpg",
+    "static/media/avatar.jpg": "/chat-work/static/media/avatar.bfb09605a233a98f5d3e.jpg",
+    "static/media/10.jpg": "/chat-work/static/media/10.58cb397d6eb650497a8b.jpg",
+    "index.html": "/chat-work/index.html",
+    "static/media/arrow.svg": "/chat-work/static/media/arrow.b94bb630fe112562bf5a61711b004b33.svg",
+    "static/media/loupe.svg": "/chat-work/static/media/loupe.fc1606b371d6ebf26f122f5936cd4031.svg",
+    "main.071c5d5d.css.map": "/chat-work/static/css/main.071c5d5d.css.map",
+    "main.622b4f51.js.map": "/chat-work/static/js/main.622b4f51.js.map",
+    "787.39c65f20.chunk.js.map": "/chat-work/static/js/787.39c65f20.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.071c5d5d.css",
+    "static/js/main.622b4f51.js"
   ]
 }
