@@ -1,6 +1,5 @@
 .list__container {
     padding-top: 20px;
-    min-height: 70vh;
 }
 
 .list__title {
@@ -12,6 +11,10 @@
     list-style: none;
     margin: 0;
     padding: 0;
+
+    overflow: auto;
+    height: 355px;
+
 }
 
 .notfound {
