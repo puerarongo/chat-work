@@ -56,9 +56,29 @@
     }
 }
 
+
 @media screen and (min-height: 750px) {
     .chat {
-        padding-top: 20%;
+        padding-top: 8%;
+    }
+}
+
+@media screen and (min-height: 800px) {
+    .chat {
+        padding-top: 8%;
+    }
+}
+
+@media screen and (min-height: 840px) {
+    .chat {
+            padding-top: 20%;
+        }
+}
+
+
+@media screen and (min-height: 1000px) {
+    .chat {
+        padding-top: 10%;
     }
 }
 
