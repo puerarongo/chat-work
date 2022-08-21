@@ -31,7 +31,7 @@
     }
 }
 
-@media screen and (min-widt: 481px) {
+@media screen and (min-width: 481px) {
     .sidebar {
         width: 35%;
     }
