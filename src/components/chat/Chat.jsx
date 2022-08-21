@@ -11,12 +11,13 @@ import ChatHeader from 'components/chatHeader/ChatHeader';
 import PropTypes from 'prop-types';
 import styles from './Chat.module.css';
 
-const delay = 8000;
+const delay = 10000;
 
 const Chat = ({ messageFunc }) => {
     const id = useParams().user;
     const storageKey = "keyStorage";
     const intervalKey = id;
+    const superKey = id + storageKey;
     
     const [profile, setProfile] = useState("");
     const [text, setText] = useState("");
@@ -42,19 +43,25 @@ const Chat = ({ messageFunc }) => {
                     const startTime = getObj(intervalKey) + delay;
                     const timeNow = new Date().getTime();
 
+                    // ! New Code
+                    if (getObj(superKey) === null) {
+                        setObj(superKey, 1)
+                    }
+                    else {
+                        return
+                    }
+
                     if (startTime <= timeNow) {
-                        console.log(23, id)
                         return repeatRequest.current(id, 0)
                     }
                     else {
                         const difference = timeNow - startTime
-                        console.log(Math.abs(difference))
                         return repeatRequest.current(id, Math.abs(difference))
                     }
                 }
             }
         }
-    }, [id, intervalKey]);
+    }, [id, intervalKey, superKey]);
 
 
     useEffect(() => {
@@ -118,6 +125,9 @@ const Chat = ({ messageFunc }) => {
                 .catch(err => {
                     console.error(err)
                 })
+            if (getObj(superKey) !== null) {
+                setObj(superKey, null)
+            }
         }, time);
     };
 
