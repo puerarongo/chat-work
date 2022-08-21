@@ -81,3 +81,12 @@
         margin-bottom: 30px;
     }
 }
+
+
+/* ? Height*/
+
+@media screen and (max-height: 600px) and (max-width: 768px) {
+    .list {
+        height: 395px;
+    }
+}
